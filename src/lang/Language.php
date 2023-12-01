@@ -28,6 +28,6 @@ trait Language
 
     public function load($language)
     {
-        $this->langData = require_once __DIR__ . '/' . $language . '/validation.php';
+        $this->langData = require __DIR__ . '/' . $language . '/validation.php';
     }
 }
