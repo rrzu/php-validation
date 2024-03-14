@@ -29,6 +29,8 @@ class Date extends Rule
         $this->requireParameters($this->fillableParams);
 
         $format = $this->parameter('format');
-        return date_create_from_format($format, $value) !== false;
+        $dateObject = date_create_from_format($format, $value);
+
+        return $dateObject && $value === date_format($dateObject, $format);
     }
 }
