@@ -242,11 +242,11 @@ class Validation
         }
 
         // set other attributes to each attributes
-        foreach ($attributes as $i => $attr) {
-            $otherAttributes = $attributes;
-            unset($otherAttributes[$i]);
-            $attr->setOtherAttributes($otherAttributes);
-        }
+//        foreach ($attributes as $i => $attr) {
+//            $otherAttributes = $attributes;
+//            unset($otherAttributes[$i]);
+//            $attr->setOtherAttributes($otherAttributes);
+//        }
 
         return $attributes;
     }
